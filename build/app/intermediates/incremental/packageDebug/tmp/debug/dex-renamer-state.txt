@@ -1,0 +1,4 @@
+#Wed Sep 25 19:15:19 EDT 2019
+base.0=/home/black/Documents/Projects/dnews/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
