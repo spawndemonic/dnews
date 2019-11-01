@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
+import "../feed.dart";
 
-class MainPage extends StatelessWidget{
-  Widget build(BuildContext context){
+class MainPage extends StatelessWidget {
+  Widget build(BuildContext context) {
+    final sources = articles();
     return Scaffold(
       appBar: AppBar(
-        title:Text('DNews')
+        title: Text('DNews'),
       ),
-       
+      body: Card(
+          child: Column(
+        children: <Widget>[
+          
+        ],
+      )),
     );
-    
   }
-  
-  Widget _buildRow(){
-//Build Rows
-  //Each Row will contain an artticle title
-  //when clicked opens article(read in app or in browser(pub package: url_launcher)?)
-  }
-  
 }

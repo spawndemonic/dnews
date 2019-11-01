@@ -1,0 +1,4 @@
+http://rss.nytimes.com/services/xml/rss/nyt/World.xml
+https://www.aljazeera.com/xml/rss/all.xml
+http://feeds.washingtonpost.com/rss/politics
+https://feeds.feedburner.com/TheHackersNews
