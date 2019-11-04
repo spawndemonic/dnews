@@ -1,18 +1,37 @@
 import 'package:flutter/material.dart';
-import 'screens/main_page.dart';
+import 'package:webfeed/domain/rss_feed.dart';
+import "../feed.dart";
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class MainPage extends StatefulWidget {
   @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return _MainPageState();
+  }
+}
+
+class _MainPageState extends State<MainPage> {
+  List<dynamic> _feed = articles();
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        
-        primaryColor: Colors.white,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('DNews'),
       ),
-      home:MainPage(),        
+      body: Column(
+        children: [
+          Column(
+            children: _feed
+                .map((element) => Card(
+                      child: Column(
+                        children: <Widget>[
+                          Text(element.title),
+                        ],
+                      ),
+                    ))
+                .toList(),
+          ),
+        ],
+      ),
     );
   }
 }
