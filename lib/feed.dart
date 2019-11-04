@@ -13,7 +13,7 @@ class Feed {
       return response.body;
     }).then((bodyString) {
       var channel = new RssFeed.parse(bodyString);
-      return channel;
+      return channel.items;
     });
   }
 }
